@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1)),
+        url(../assets/mandala.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner img{
+    width: 15rem;
+}
+
+#banner h1{
+    color: #213f1b;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+#banner .slogan{
+    color: #305329;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+/* Seccion especialidades */
+
+.especialidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.especialidades h2{
+    font-size: 2.5rem;
+    color: #56794E;
+    width: 60vw;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* SECCION PASTILLAS DE INFORMACIÓN */
+
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 10vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20vw;
+    height: auto;
+    padding: 2rem 1.5rem;
+    transition: all 0.5s;
+    border: none;
+}
+
+.card:hover{
+    background-color: #C3B38D;
+    color: white;
+    border-radius: 1rem ;
+}
+
+.card:hover > h3{
+    color: white;
+}
+
+.icon{
+    background-color: #C3B38D;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    width: 4.5rem;
+}
+
+.card h3{
+    color: #56794E;
+    font-size: 1.2rem;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.card p{
+    font-size: 0.9rem;
+}
+
+
+/* CAROUSEL */
+
+#yoga_slider{
+    margin: 10vh 0 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#yoga_slider h2{
+    font-size: 2.5rem;
+    color: #56794E;
+    width: 60vw;
+    text-align: center;
+    padding-bottom: 5vh;
+    font-family: "Cormorant Garamond", serif;
+    
+}
+.carousel {
+    width: 80vw;
+    margin: 0;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+
+
+/* HIGHLIGHTS */
+
+#highlights{
+    margin: 10vh 10vw 0 10vw;
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C3B38D;
+    border-radius: 20px;
+}
+
+.highlights_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    border-left: 2px solid #779c6f;
+
+}
+
+.highlights_card:hover > .number ,.highlights_card:hover > p{
+    color: #56794E;
+}
+
+
+.highlights_card .number{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.5s;
+}
+
+.highlights_card .highlight-text{
+    padding-top: 20px;
+    font-size: 1.1rem;
+    transition: all 0.4s;
+    color: white;
+}
+
+.highlights_card1{
+    border-left: 0px;
+}
+
+
+/* MAIN CONTENT 1 */
+
+#main1{
+    margin: 20vh 10vw 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main1_img{
+    width: 40vw;
+    margin-right: 3vw;
+    background-image: url(../assets/yoga1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main1_content{
+    width: 40vw;
+    margin-left: 3vw;
+}
+
+.pestaña{
+    font-size: 1.5rem;
+    color: #74996c;
+    font-family: "Cormorant Garamond", serif;
+    padding: 0;
+}
+
+.main1_content h2, .main2_content h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #56794E;
+    padding-bottom: 10px;
+}
+
+.main1_content p{
+    padding: 15px 0;
+}
+
+/* MAIN CONTENT 2 */
+
+#main2{
+    margin: 20vh 10vw 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.main2_img{
+    width: 40vw;
+    margin-left: 1vw;
+    background-image: url(../assets/yoga2.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.main2_content{
+    width: 40vw;
+    margin-right: 3vw;
+}
+
+.main2_content p{
+    padding: 15px 0;
+}
+
+.specialtext{
+    font-weight: 500;
+    color: #56794E;
+}
+
+/* CONTACTO */
+
+#video{
+    margin: 15vh 0 0 10vw;
+}
+
+#video iframe{
+    width: 80vw;
+    height: 80vh;
+}
+
+
+
+/* CONTACTO */
+
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 15vh 0 0 10vw;
+    background-color: #C3B38D;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#contacto form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text input{
+    width: 23vw;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+}
+
+#contacto form div textarea{
+    width: 23vw;
+    margin-bottom: 10px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 0 0 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.botones input{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: #56794E;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #C3B38D;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+    color: white;
+}
+
+.footer2{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1_p1{
+    font-size: 1.25rem;
+}
+
+.middle{
+    padding: 20px 0;
+}
+
+.footer3{
+    text-align: right;
+}
+
+.footer3 p{
+    padding: 5px 0;
+}
+
+.footer2 h3{
+    font-size: 1.75rem;
+    font-weight: 300;
+
+}
+
+.footer2 h4{
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 15px 0;
+}
+
+.socials{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.socials img{
+    width: 25px;
+}
+
+
+/* RESPOSIVE TABLET 1024PX */
+
+@media screen and (max-width: 1024px){
+
+*{
+    font-size: 14px;
+}
+
+.cards_container{
+    margin: 5vh 10vw;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 30rem 30rem;
+    grid-template-areas: "c1 c2" "c3 c4";
+    margin-bottom: 5rem;
+}
+.card{
+    width: 40vw;
+    height: 30rem;
+    padding-bottom: 5rem;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.card p{
+    font-size: 1rem;
+}
+
+/* HIGHLIGHTS */
+
+#highlights{
+    margin: 0 10vw;
+    width: 80vw;
+    height: 30vh;
+}
+
+.highlights_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    border-left: 2px solid #779c6f;
+}
+
+.highlights_card .number{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.highlights_card .highlight-text{
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+}
+
+/* MAIN CONTENT 1 */
+
+#main1{
+    margin: 15vh 10vw 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main1_img{
+    width: 80vw;
+    height: 55rem;
+    margin-right: 0vw;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 3vh;
+}
+
+.main1_content{
+    width: 80vw;
+    margin-left: 0vw;
+}
+
+/* MAIN CONTENT 2 */
+
+#main2{
+    margin: 15vh 10vw 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main2_img{
+    order: -1;
+    width: 80vw;
+    height: 30rem;
+    margin-left: 0vw;
+    margin-bottom: 3vh;
+}
+
+.main2_content{
+    width: 80vw;
+    margin-right: 0vw;
+}
+
+.main1_content h2, .main2_content h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 0.8rem 0;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: auto;
+}
+
+.footer2, .footer1, .footer3{
+    height: 15rem;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2{
+    border-top: 1px solid #779c6f;
+    border-bottom: 1px solid #779c6f;
+}
+
+.middle{
+    text-align: center;
+}
+
+
+/* CONTACTO */
+
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.map{
+    width: 90%;
+    margin: 5vh 0;
+}
+
+#contacto form{
+    width: 90%;
+}
+
+.input-text input{
+    width: 50vw;
+    margin-bottom: 25px;
+}
+
+#contacto form div textarea{
+    width: 50vw;
+    margin-bottom: 25px;
+}
+
+
+}
+
+
+
+/* RESPOSIVE MOBILE 600px */
+
+@media screen and (max-width: 600px){
+
+    *{
+        font-size: 10px;
+    }
+
+    /* Seccion especialidades */
+
+
+    .especialidades h2{
+        font-size: 2.25rem;
+        width: 90vw;
+    }
+    
+    /* Seccion Pastillas */
+
+    .cards_container{
+        margin: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .card{
+        
+        width: 90vw;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .card h3{
+        font-size: 2rem;
+        padding: 1.5rem 0;
+    }
+    
+    .card p{
+        font-size: 1.5rem;
+    }
+    
+    /* HIGHLIGHTS */
+    
+    #highlights{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .highlights_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        border: 0px;
+    }
+    
+    .highlights_card .number{
+        font-size: 5rem;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .highlights_card .highlight-text{
+        padding: 0 0.5rem;
+        font-size: 1.8rem;
+        height: 2rem;
+    }
+    
+    /* MAIN CONTENT 1 */
+    
+    
+    .main1_img{
+        width: 80vw;
+        height: 60vh;
+        margin-right: 0vw;
+        background-position: bottom;
+        margin-bottom: 3vh;
+    }
+    
+    .main1_content{
+        width: 80vw;
+        margin-left: 0vw;
+    }
+
+    .main1_content p{
+        font-size: 1.4rem;
+        padding: 1rem 0;
+    }
+
+    .specialtext{
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    
+    /* MAIN CONTENT 2 */
+    
+    #main2{
+        margin: 10vh 10vw 0 10vw;
+    }
+    
+    .main2_img{
+        height: 40vh;
+    }
+    
+    .main2_content{
+        width: 80vw;
+        margin-right: 0vw;
+    }
+    
+    .main2_content p{
+        font-size: 1.4rem;
+        padding: 1rem 0;
+    }
+    
+    /* FOOTER */
+    
+    footer{
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+    }
+    
+    .footer2, .footer1, .footer3{
+        height: 22vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer2{
+        border-top: 1px solid #779c6f;
+        border-bottom: 1px solid #779c6f;
+    }
+
+    /* CONTACTO */
+
+
+    #contacto{
+        padding: 5px 5px 20px 5px;
+    }
+
+    .map iframe{
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+
+    #contacto form{
+        width: 100%;
+    }
+
+    .input-text input{
+        width: 70vw;
+        margin-bottom: 25px;
+    }
+
+    #contacto form div textarea{
+        width: 70vw;
+        margin-bottom: 25px;
+    }
+
+    
+    }
